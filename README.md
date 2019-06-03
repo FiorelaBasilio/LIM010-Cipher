@@ -33,6 +33,6 @@ Al momento de usar el programa sus mensajes van a ser cifrados y va ser difícil
 
 ## Prototipo en Balsamiq
 
-![ ](img/4.png)
+![imagenes](img/4.PNG)
 
-![ ](img/5.png)
+![imagenes](img/5.PNG)
