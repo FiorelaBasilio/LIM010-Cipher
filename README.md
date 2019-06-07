@@ -6,7 +6,9 @@ Este programa les va a servir para que sus mensajes sean privados y tengan mayor
 
 ## Imagen Final
 
+![imgf](img/7.PNG)
 
+![imgf](img/8.PNG)
 
 
 

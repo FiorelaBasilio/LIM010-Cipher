@@ -1,51 +1,41 @@
-/* Acá van tus reglas de estilo */
-*{
+/* Acá van tus reglas de estilo*/
+body{
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
     font-family: 'Josefin Sans', sans-serif;
-}
-
-body{
-    /*background-image:url(img/8.jpg) ;*/
-    background-color: blue;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
     color: white;
+    text-align: center;
 }
 
 .inicio{
-    margin-top: 130px;
-    margin-bottom: 250px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    border-radius: 5px;
 }
-
 .fondo{
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    border-radius: 5px;
+  border: 1px solid #E1E1E1;
+  background-color: rgba(16, 16, 17, 0.562);
+  border-radius: 5px;
+  padding: 17px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .fondo img{
-    margin-top: -75px;
-    margin-bottom: 40px;
+    margin-top: -50px;
+    margin-bottom:20px;
     width: 50%;
     border-radius: 50%;
-    border:solid white 5px;
+    /*border:solid rgb(12, 12, 12) 5px;*/
 }
-
 .fondo h2{
     color: white;
     text-align: center;
@@ -53,26 +43,24 @@ body{
     margin-bottom: 50px;
 }
 
-.fondo form{
-    width: 50%;
-}
-
+/*Estilo de caja de la llave*/
 .fondo form span{
-    margin-right: 0px;
+    margin-right: -4.5px;
     background-color: rgba(255, 255, 255, .6);
     color: black;
-    border:solid 7px rgba(255, 255, 255, .01);
-    border-bottom:  solid 9.5px rgba(255, 255, 255, .01);
-    border-top: solid 9px rgb(255, 255, 255, .01);
+    border:solid 15px rgba(255, 255, 255, .01);
+    border-bottom:  solid 7px rgba(255, 255, 255, .01);
+    border-top: solid 10px rgb(255, 255, 255, .01);
     border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;  
 }
 
+/*Estilos input de la contraseña*/  
 .caja{
     box-shadow: 0px;
     border: 0px;
     background-color: rgba(255, 255, 255, .1);
-    width: 90%;
+    width: 70%;
     margin-bottom: 35px;
     height: 30px;
     border: solid 2px  rgb(255, 255, 255, .5);
@@ -83,27 +71,146 @@ body{
     text-align: center;
 }
 
-.icono form{
-   position: absolute;
-   left: 0;
-   top:8px;
-   padding: 9px 8px;
-   color:#aaa;
-}
-
 .boton{
-    width: 100%;
+    width: 50%;
     height: 40px;
     font-size: 25px;
     border: 0px;
     text-align: center;
-    background: rgba(19, 136, 78, 0.932);
+    background: rgba(2, 102, 47, 0.932);
     border-bottom: solid 1px white;
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
+    transition: all 200ms ease;
 }
 
 .boton:hover{
     background-color:  #15AC35;
+}
+
+/*Segundo Formulario Descifrar y Cifrar*/
+
+.ver{
+    border: 1px solid #E1E1E1;
+    background-color: rgba(16, 16, 17, 0.562);
+    border-radius: 5px;
+    padding: 17px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*Titulo*/
+.ver h2{
+    font-size:50px;
+    font-family: 'Crete Round', serif;
+    align-items: center;
+    margin-bottom: 5%;
+    margin: 0px;
+    padding: 0px;
+ }
+
+ /* Caja nuneros*/
+ .ver p{
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 0%;
+    display: flex;
+}
+
+.numeros{
+    width:10%;
+    text-align: center;
+    height: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+/*texarea*/
+.estilos{
+    font-size: 18px;
+    border-radius: 5px;
+}
+.estilos1{
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.boton1{
+    width: 20%;
+    height: 40px;
+    font-size: 25px;
+    border: 0px;
+    text-align: center;
+    background: rgb(9, 131, 39);
     color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton1:hover{
+    background-color:  rgb(4, 75, 19);
+    color: white;
+}
+
+.boton2{
+    width: 20%;
+    height: 40px;
+    font-size: 25px;
+    border: 0px;
+    text-align: center;
+    background: rgb(9, 131, 39);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton2:hover{
+    background-color:  rgb(4, 75, 19);
+    color: white;
+}
+
+.boton4{
+    width: 20%;
+    height: 40px;
+    font-size: 25px;
+    border: 0px;
+    text-align: center;
+    background: rgb(9, 131, 39);
+    color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton4:hover{
+    background-color:  rgb(4, 75, 19);
+    color: white;
+}
+
+.boton5{
+    width: 20%;
+    height: 40px;
+    font-size: 25px;
+    border: 0px;
+    text-align: center;
+    background: rgb(9, 131, 39);
+    color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton5:hover{
+    background-color:  rgb(4, 75, 19);
+    color: white;
+}
+
+/*Mensaje  incorrecto*/
+
+.aviso{
+    color: rgb(230, 141, 106);
+    font-size: 20px;
 }

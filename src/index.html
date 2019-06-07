@@ -11,36 +11,65 @@
     <!--Fuente-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
 
     <!--Estilos-->
     <link rel="stylesheet" href="style.css" />
+
   </head>
-
-  <body>
-      <div class="contenedor" >
-
+  <body background="img/8.jpg">
+      <!--<div class="contenedor" > -->
     <header>
       
     </header>
 
     <main>
-        <div class="inicio">
+
+      <!--Pagina Inicio-->
+
+        <div class="inicio" id="Bienvenida" style="display: block">
 
           <article class="fondo">
-            <img src="img/9.jpg" alt="Usuario">
-
+            <img src="img/9.png " alt="Usuario">
             <h2>Encrypted Messages</h2>
 
+            <!--Mensaje error-->
+            <span class="aviso" id="incorrecto"></span>
+
             <form action="#">
-            <span class="icono"><i class="fas fa-key"></i></span>
-            <input class="caja" type="password" placeholder="Contraseña...." value="" required>
-            <input class="boton" type="submit" value="Ingresar" required>
+              <span class="icono"><i class="fas fa-key"></i></span>
+                <input class="caja" type="password" id="contraseña" placeholder="Contraseña...." value="" required>
+                <input class="boton" type="submit" id="capturarContraseña" value="Ingresar" required>
+
             </form>
-
           </article>
+          </div>
 
+      <!--Formulario-->
+
+        <div class="cifrado" id="formulario" style="display: none" >
+
+          <article class="ver">
+            <h2>Encrypted Messages</h2>
+        
+              <p>Ingresa Numero:<input class="numeros" type="number" id="number" min="1" max="100"> 
+              </p>
+
+              <p>Mensaje:</p> 
+              <textarea class="estilos" name="Texto" id="letras" placeholder="Escriba el Mensaje aquí" cols="50" rows="7"></textarea>
+              
+
+              <p>Resultados:</p>
+              <textarea class="estilos1" name="mostrar" id="result" placeholder="Se muestra los resultados" cols="50" rows="7"></textarea>
+            
+              <p>
+              <input class="boton1" type="submit" id="cifrando" value="Cifrar">
+              <input class="boton2" type="submit" id="descifrando" value="Descifrar">
+              <input class="boton4" type="submit" id="limpiar" value="Limpiar">
+              <input class="boton5" type="submit" id="salir" value="Salir">
+              </p>
+          </article>
         </div>
-      
     </main>
 
     <footer>
