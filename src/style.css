@@ -214,3 +214,7 @@ body{
     color: rgb(230, 141, 106);
     font-size: 20px;
 }
+
+  .hide {
+    display: none;
+  }
