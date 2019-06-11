@@ -23,6 +23,7 @@ clave.addEventListener("click", () => {
         contraseña.value="";
 
         if(contar < final){
+
             contraseña.focus();
             mensaje.innerHTML="Contraseña Incorrecta. Vuelva a Intentarlo";
 
@@ -30,8 +31,7 @@ clave.addEventListener("click", () => {
         else{
             mensaje.innerHTML="Ya utilizastes todos tus intentos";
             contraseña.disabled=true;
-            
-            
+            capturarContraseña.disabled=true;
         }   
     }
 else{
@@ -80,6 +80,7 @@ casa.addEventListener("click", ()=>{
 
     document.getElementById("formulario").style.display = "none";    
     document.getElementById("Bienvenida").style.display = "block";
+
     contraseña.value="";
 
 })

@@ -83,6 +83,7 @@ body{
     color: white;
     margin-top: 5px;
     transition: all 200ms ease;
+    cursor: pointer;
 }
 
 .boton:hover{
@@ -151,6 +152,7 @@ body{
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 .boton1:hover{
     background-color:  rgb(4, 75, 19);
@@ -169,6 +171,7 @@ body{
     margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 .boton2:hover{
     background-color:  rgb(4, 75, 19);
@@ -186,6 +189,7 @@ body{
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 .boton4:hover{
     background-color:  rgb(4, 75, 19);
@@ -203,6 +207,7 @@ body{
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 .boton5:hover{
     background-color:  rgb(4, 75, 19);
@@ -216,6 +221,19 @@ body{
     font-size: 20px;
 }
 
+/*Para el ClassList utilizar*/
   .hide {
     display: none;
+  }
+
+  /*Pie de pagina al proyecto*/
+  .piePagina{
+      font-family: 'Convergence', sans-serif;
+      background-color: rgb(14, 14, 77);
+      width: 100%;
+      height: 25px;
+      bottom: 0;
+      position: fixed;
+      text-align: center;
+      color: rgb(255, 255, 255);
   }
