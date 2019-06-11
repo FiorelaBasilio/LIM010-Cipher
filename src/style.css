@@ -1,5 +1,6 @@
 /* Acá van tus reglas de estilo*/
 body{
+    background-image: url(img/8.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
