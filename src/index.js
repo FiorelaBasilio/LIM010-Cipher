@@ -35,7 +35,8 @@ clave.addEventListener("click", () => {
         }   
     }
 else{
-    mensaje.innerHTML="Ingrese Contraseña"; contraseña.focus();
+    mensaje.innerHTML="Ingrese Contraseña"; 
+    contraseña.focus();
     
 }
 });
@@ -49,7 +50,7 @@ cifra.addEventListener('click',() => {
     let result = document.getElementById('result');
     //debugger Comprobar cuando vas ejecutando
     let respuestas=cipher.encode(number.value, letras.value);
-    result.innerHTML=(respuestas);
+    result.value=respuestas;
 })
 
 /*Descifrando*/
@@ -61,7 +62,7 @@ descifra.addEventListener('click',()=>{
     let result = document.getElementById('result');
     
     let respuest=cipher.decode(number.value, letras.value);
-    result.innerHTML=(respuest);
+    result.value=respuest;
 })
 
 /*Limpiar*/
