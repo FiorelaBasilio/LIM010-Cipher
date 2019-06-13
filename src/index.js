@@ -1,6 +1,7 @@
 /* Acá va tu código */
 const clave = document.getElementById("capturarContraseña");
 let mensaje = document.getElementById("incorrecto");
+let contraseña=document.getElementById("contraseña");
 let contar = 0;
 const final = 3;
 
@@ -31,11 +32,11 @@ clave.addEventListener("click", () => {
         else{
             mensaje.innerHTML="Ya utilizastes todos tus intentos";
             contraseña.disabled=true;
-            capturarContraseña.disabled=true;
         }   
     }
 else{
     mensaje.innerHTML="Ingrese Contraseña"; contraseña.focus();
+    
 }
 });
 
@@ -46,7 +47,7 @@ cifra.addEventListener('click',() => {
     let letras = document.getElementById('letras');
     let number = document.getElementById('number');
     let result = document.getElementById('result');
-    debugger; //Comprobar cuando vas ejecutando
+    //debugger Comprobar cuando vas ejecutando
     let respuestas=cipher.encode(number.value, letras.value);
     result.innerHTML=(respuestas);
 })
@@ -58,7 +59,7 @@ descifra.addEventListener('click',()=>{
     let letras = document.getElementById('letras');
     let number = document.getElementById('number');
     let result = document.getElementById('result');
-    debugger;
+    
     let respuest=cipher.decode(number.value, letras.value);
     result.innerHTML=(respuest);
 })
