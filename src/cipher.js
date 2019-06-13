@@ -8,26 +8,25 @@ window.cipher = {
 
     for (let i = 0; i < string.length; i++){    //El for recorre las letras al texto
 
-      if(string.charCodeAt(i) === 32) //Con el Codigo ASSCI para dar espacios 
-      {
-        ubicar = string.charCodeAt(i);
-      }
-
-      else if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <=90) {
+     if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <=90) { //mayuscula ASSCI
 
         ubicar=(string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
       }
 
-      else if(string.charCodeAt(i) >= 97 && string.charCodeAt(i) <=122){
+      else if(string.charCodeAt(i) >= 97 && string.charCodeAt(i) <=122){ //minuscula ASSCI
 
         ubicar=(string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
       }
 
-      /*else{
-          
-        ubicar=(string.toUpperCase().charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
-    
-      }*/
+      //PRUEBA CARACTERES
+      else if(string.charCodeAt(i) >= 33 && string.charCodeAt(i) <=64){  
+
+        ubicar=(string.charCodeAt(i) - 33 + parseInt(offset)) % 32 + 33;
+      }
+      else  
+      {
+        ubicar = string.charCodeAt(i);
+      }
 
       let cifrado = String.fromCharCode(ubicar);
 
@@ -44,25 +43,27 @@ window.cipher = {
     
     for (let j = 0; j < string.length; j++){    //El for recorre las letras al texto
 
-
-      if(string.charCodeAt(j) === 32) // Con el Codigo ASSCI para dar espacios
-      {
-        ubicacionD = string.charCodeAt(j);
-      }
-
-      else if(string.charCodeAt(j) >= 65 && string.charCodeAt(j) <=90) {
+      if(string.charCodeAt(j) >= 65 && string.charCodeAt(j) <=90) {
  
         ubicacionD= 90 - ((90 - string.charCodeAt(j) + parseInt(offset)) % 26);
       }
 
       else if(string.charCodeAt(j) >= 97 && string.charCodeAt(j) <=122){
 
-        ubicacionD= 122 -((122 - string.charCodeAt(j)+parseInt(offset) % 26));
+        ubicacionD = 122-((122- string.charCodeAt(j)+parseInt(offset)) % 26);
       }
 
-      /*else{
-          ubicacionD=(string.toUpperCase().charCodeAt(j) + 65 - parseInt(offset)) % 26 + 65;
-      }*/
+      //PRUEBA CARACTERES
+      else 
+      if(string.charCodeAt(j) >= 33 && string.charCodeAt(j) <=64){
+
+        ubicacionD = 64-((64- string.charCodeAt(j)+parseInt(offset)) % 32);
+      }
+
+      else  
+      {
+        ubicacionD = string.charCodeAt(j);
+      }
 
       let palabraDescifrada = String.fromCharCode(ubicacionD);
 
