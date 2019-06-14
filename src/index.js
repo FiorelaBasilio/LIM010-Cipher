@@ -2,6 +2,10 @@
 const clave = document.getElementById("capturarContraseña");
 let mensaje = document.getElementById("incorrecto");
 let contraseña=document.getElementById("contraseña");
+
+const Bienvenida=document.getElementById("Bienvenida");
+const formulario=document.getElementById("formulario");
+formulario.classList.add("hide");
 let contar = 0;
 const final = 3;
 
@@ -80,11 +84,13 @@ limpia.addEventListener("click",()=>{
 const casa = document.getElementById("salir");
 casa.addEventListener("click", ()=>{
 
-    document.getElementById("formulario").style.display = "none";    
-    document.getElementById("Bienvenida").style.display = "block";
-
+    
+    Bienvenida.classList.remove("hide");
+    formulario.classList.add("hide");
+    number.value="";
+    letras.value="";
+    result.value="";
     contraseña.value="";
-
 })
    
   

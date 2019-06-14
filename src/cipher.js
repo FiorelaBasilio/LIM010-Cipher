@@ -60,7 +60,7 @@ window.cipher = {
         ubicacionD = 64-((64- string.charCodeAt(j)+parseInt(offset)) % 32);
       }
 
-      else  
+      else  //espacio
       {
         ubicacionD = string.charCodeAt(j);
       }
