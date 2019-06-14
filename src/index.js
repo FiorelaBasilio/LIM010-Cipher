@@ -2,9 +2,15 @@
 const clave = document.getElementById("capturarContraseña");
 let mensaje = document.getElementById("incorrecto");
 let contraseña=document.getElementById("contraseña");
+let number=document.getElementById("number");
+let letras=document.getElementById("letras");
+let result=document.getElementById("result");
 
 const Bienvenida=document.getElementById("Bienvenida");
 const formulario=document.getElementById("formulario");
+
+
+
 formulario.classList.add("hide");
 let contar = 0;
 const final = 3;
