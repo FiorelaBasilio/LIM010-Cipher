@@ -9,9 +9,8 @@ let result = document.getElementById("result");
 const Bienvenida = document.getElementById("Bienvenida");
 const formulario = document.getElementById("formulario");
 
-
-
 formulario.classList.add("hide");
+
 let contar = 0;
 const final = 3;
 
@@ -40,8 +39,9 @@ clave.addEventListener("click", () => {
 
         }
         else {
-            mensaje.innerHTML = "Ya utilizastes todos tus intentos";
+
             contraseña.disabled = true;
+            mensaje.innerHTML = "Ya utilizastes todos tus intentos";
         }
     }
     else {
