@@ -11,31 +11,6 @@ body{
     text-align: center;
 }
 
-header{
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, .2);
-}
-
-header h1{
-    margin-left: 30px;
-    font-size: 20px;
-}
-
-.icocan{
-    margin-right: 30px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    transition: all ease 300ms;
-}
-
 .inicio{
     margin-top: 80px;
     margin-bottom: 20px;
@@ -44,7 +19,6 @@ header h1{
     align-items: center;
     align-content: center;
 }
-
 .fondo{
   border: 1px solid #E1E1E1;
   background-color: rgba(16, 16, 17, 0.562);

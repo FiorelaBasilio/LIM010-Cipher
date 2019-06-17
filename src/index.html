@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Caesar Cipher</title>
-    <link rel="icon" href="img/10.png">
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
 
-    <!--Iconos-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="icon" href="img/10.png">
 
-    <!--Fuente-->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Convergence&display=swap" rel="stylesheet">
+  <!--Iconos-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <!--Estilos-->
-    <link rel="stylesheet" href="style.css" />
+  <!--Fuente-->
+  <link href="https://fonts.googleapis.com/css?family=Convergence|Crete+Round|Josefin+Sans|Pacifico&display=swap"
+    rel="stylesheet">
 
-  </head>
-  <body >
-      <!--<div class="contenedor" > -->
-    <header>
-      
-    </header>
+  <!--Estilos-->
+  <link rel="stylesheet" href="style.css" />
 
-    <main>
+</head>
 
-      <!--Pagina Inicio-->
+<body>
+  <!--<div class="contenedor" > -->
+  <header>
+    <h1 class="titulo">Cifrado César</h1>
+    <span class="icocan"><i class="fas fa-user-lock"></i></span>
+  </header>
 
-        <div class="inicio" id="Bienvenida">
+  <main>
 
-          <article class="fondo">
-            <img src="img/9.png " alt="Usuario">
-            <h2>Encrypted Messages</h2>
+    <!--Pagina Inicio-->
+    <div class="inicio" id="Bienvenida">
 
-            <!--Mensaje error-->
-            <span class="aviso" id="incorrecto"></span>
+      <section class="fondo">
+        <img src="img/9.png " alt="Usuario">
+        <h2>Encrypted Messages</h2>
 
-            <form action="#">
-              <span class="icono"><i class="fas fa-key"></i></span>
-                <input class="caja" type="password" id="contraseña" placeholder="Contraseña...." value="" required>
-                <input class="boton" type="submit" id="capturarContraseña" value="Ingresar">
-            </form>
-          </article>
-          </div>
+        <!--Mensaje error-->
+        <span class="aviso" id="incorrecto"></span>
 
-      <!--Formulario-->
+        <form action="#">
+          <span class="icono"><i class="fas fa-key"></i></span>
+          <label><input class="caja" type="password" id="contraseña" placeholder="Contraseña...." value="" required></label> 
+          <input class="boton" type="submit" id="capturarContraseña" value="Ingresar">
+        </form>
+      </section>
+    </div>
 
-        <div class="cifrado" id="formulario">
+    <!--Formulario-->
 
-          <article class="ver">
-            <h2>Encrypted Messages</h2>
-        
-              <p>Ingresa Numero:<input class="numeros" type="number" id="number" min="1" max="100"> 
-              </p>
+    <div class="cifrado" id="formulario">
 
-              <p>Mensaje:</p> 
-              <textarea class="estilos" name="Texto" id="letras" placeholder="Escriba el Mensaje aquí" cols="50" rows="5"></textarea>
-              
+      <section class="ver">
+        <h2>Encrypted Messages</h2>
 
-              <p>Resultados:</p>
-              <textarea class="estilos1" name="mostrar" id="result" placeholder="Se muestra los resultados" cols="50" rows="5"></textarea>
-            
-              <p>
-              <input class="boton1" type="submit" id="cifrando" value="Cifrar">
-              <input class="boton2" type="submit" id="descifrando" value="Descifrar">
-              <input class="boton4" type="submit" id="limpiar" value="Limpiar">
-              <input class="boton5" type="submit" id="salir" value="Salir">
-              </p>
-          </article>
-        </div>
-    </main>
+        <p>Ingresa Numero:<input class="numeros" type="number" id="number" placeholder="N°" min="1" max="100">
+        </p>
 
-    <footer>
-       <div class="piePagina">
-              HECHO POR: FIORELA BASILIO MANRIQUE
-              <span class="iconosp"><i class="fab fa-facebook"></i></span>
-              <span class="iconosp"><i class="fas fa-envelope"></i></span>
-              <span class="iconosp"><i class="fab fa-slack"></i></span>
-              <span class="iconosp"><i class="fab fa-github"></i></span>
-       </div>
-    </footer>
+        <p>Mensaje:</p>
+        <textarea class="estilos" name="Texto" id="letras" placeholder="Escriba el Mensaje aquí" cols="50"
+          rows="5"></textarea>
 
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
 
-  </body>
+        <p>Resultados:</p>
+        <textarea class="estilos1" name="mostrar" id="result" placeholder="Se muestra los resultados" cols="50"
+          rows="5"></textarea>
+
+        <p>
+          <input class="boton1" type="submit" id="cifrando" value="Cifrar">
+          <input class="boton2" type="submit" id="descifrando" value="Descifrar">
+          <input class="boton4" type="submit" id="limpiar" value="Limpiar">
+          <input class="boton5" type="submit" id="salir" value="Salir">
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="piePagina">
+      HECHO POR: FIORELA BASILIO MANRIQUE
+      <span class="iconosp"><i class="fab fa-facebook"></i></span>
+      <span class="iconosp"><i class="fas fa-envelope"></i></span>
+      <span class="iconosp"><i class="fab fa-slack"></i></span>
+      <span class="iconosp"><i class="fab fa-github"></i></span>
+    </div>
+  </footer>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
 </html>

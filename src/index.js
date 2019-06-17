@@ -1,13 +1,13 @@
 /* Acá va tu código */
 const clave = document.getElementById("capturarContraseña");
 let mensaje = document.getElementById("incorrecto");
-let contraseña=document.getElementById("contraseña");
-let number=document.getElementById("number");
-let letras=document.getElementById("letras");
-let result=document.getElementById("result");
+let contraseña = document.getElementById("contraseña");
+let number = document.getElementById("number");
+let letras = document.getElementById("letras");
+let result = document.getElementById("result");
 
-const Bienvenida=document.getElementById("Bienvenida");
-const formulario=document.getElementById("formulario");
+const Bienvenida = document.getElementById("Bienvenida");
+const formulario = document.getElementById("formulario");
 
 
 
@@ -20,83 +20,82 @@ const pagdos = document.getElementById("formulario");
 pagdos.classList.add("hide");
 
 clave.addEventListener("click", () => {
- const nombre= document.getElementById("contraseña").value;
+    const nombre = document.getElementById("contraseña").value;
 
-    if(nombre === "LABORATORIA"){
-       
+    if (nombre === "LABORATORIA") {
+
         elemento.classList.add("hide");
         pagdos.classList.remove("hide");
-    
+
     }
-    if(nombre !== "LABORATORIA"){
+    if (nombre !== "LABORATORIA") {
         contar++;
 
-        contraseña.value="";
+        contraseña.value = "";
 
-        if(contar < final){
+        if (contar < final) {
 
             contraseña.focus();
-            mensaje.innerHTML="Contraseña Incorrecta. Vuelva a Intentarlo";
+            mensaje.innerHTML = "Contraseña Incorrecta. Vuelva a Intentarlo";
 
         }
-        else{
-            mensaje.innerHTML="Ya utilizastes todos tus intentos";
-            contraseña.disabled=true;
-        }   
+        else {
+            mensaje.innerHTML = "Ya utilizastes todos tus intentos";
+            contraseña.disabled = true;
+        }
     }
-else{
-    mensaje.innerHTML="Ingrese Contraseña"; 
-    contraseña.focus();
-    
-}
+    else {
+        mensaje.innerHTML = "Ingrese Contraseña";
+        contraseña.focus();
+
+    }
 });
 
 /*Cifrando*/
 const cifra = document.getElementById("cifrando");
-cifra.addEventListener('click',() => {
+cifra.addEventListener('click', () => {
 
     let letras = document.getElementById('letras');
     let number = document.getElementById('number');
     let result = document.getElementById('result');
     //debugger Comprobar cuando vas ejecutando
-    let respuestas=cipher.encode(number.value, letras.value);
-    result.value=respuestas;
+    let respuestas = cipher.encode(number.value, letras.value);
+    result.value = respuestas;
 })
 
 /*Descifrando*/
 const descifra = document.getElementById("descifrando");
-descifra.addEventListener('click',()=>{
-    
+descifra.addEventListener('click', () => {
+
     let letras = document.getElementById('letras');
     let number = document.getElementById('number');
     let result = document.getElementById('result');
-    
-    let respuest=cipher.decode(number.value, letras.value);
-    result.value=respuest;
+
+    let respuest = cipher.decode(number.value, letras.value);
+    result.value = respuest;
 })
 
 /*Limpiar*/
 const limpia = document.getElementById("limpiar");
-limpia.addEventListener("click",()=>{
-    document.getElementById("number").value="";
-    document.getElementById("letras").value="";
-    document.getElementById("result").value="";
+limpia.addEventListener("click", () => {
+    document.getElementById("number").value = "";
+    document.getElementById("letras").value = "";
+    document.getElementById("result").value = "";
 
- 
+
 })
 
 /*Salir*/
 
 const casa = document.getElementById("salir");
-casa.addEventListener("click", ()=>{
+casa.addEventListener("click", () => {
 
-    
+
     Bienvenida.classList.remove("hide");
     formulario.classList.add("hide");
-    number.value="";
-    letras.value="";
-    result.value="";
-    contraseña.value="";
+    number.value = "";
+    letras.value = "";
+    result.value = "";
+    contraseña.value = "";
 })
-   
-  
+
